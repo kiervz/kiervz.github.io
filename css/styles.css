@@ -12,6 +12,10 @@ html, body {
 .navbar-nav > .nav-link {
     font-weight: bold;
 }
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #4A79FA!important;
+}
 
 .home-text h2 {
     position: relative;
