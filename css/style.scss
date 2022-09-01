@@ -1,0 +1,152 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2em;
+}
+
+:root {
+    --green-color: #64FFDA;
+    --primary-color: #CCD6F6;
+    --secondary-color: #8892B0;
+    --bg-color: #0A192F;
+    --bg-secondary-color: #112240;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+.active-blur {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style:none;
+}
+
+.container {
+    margin: auto;
+    width: min(90%, 1299px);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--green-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+    
+    .nav-link {
+        font-size: 0.94rem;
+        padding: 4px 8px;
+        border-radius: 0.2rem;
+        color: var(--primary-color);
+    
+        &:hover {
+            color: var(--green-color);
+        }
+    }
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.3s;
+
+    div {
+        display: block;
+        background-color: var(--primary-color);
+        height: 2px;
+        width: 24px;
+        transition: 0.3s;
+    }
+}
+
+.move {
+    .line1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .line2 {
+        opacity: 0;
+    }
+    .line3 { 
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+
+@media (max-width:768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        top: 0;
+        right: -100%;
+        width: min(75vw, 400px);
+        height: 100vh;
+        background-color: var(--bg-secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        padding: 50px 20px;
+        
+        .nav-link {
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+
+    .open-menu {
+        right: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: introLoad 0.5s forwards;
+    }
+
+    .close-menu {
+        display: none;
+        right: 0;
+    }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}

@@ -2,232 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiervey Maghanoy</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div id="home"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand nav-logo" href="index.html"><b>kiervz.dev</b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link mr-4 active" href="#home">Home</a>
-                    <a class="nav-link mr-4" href="#about">About</a>
-                    <a class="nav-link mr-4" href="#skills">Skills</a>
-                    <a class="nav-link mr-4" href="#projects">Projects</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="home parallax">
-        <div class="container">
-            <div class="home-text">
-                <h2>Hello!</h2>
-                <h2 class="main-text mt-5">I am <span class="main-text-color">Kiervey Maghanoy</span></h2>
-                <h2 class="main-text mt-3">An Aspiring Web Developer</h2>
-            </div>
-        </div>
-    </div>
-    <div class="about mt-5" id="about">
-        <div class="imaged img-fluid">
-            <img src="./images/profile.png" class="img-fluid rounded-circle" alt="Profile">
-        </div>
-        <h2 class="section-title">ABOUT ME</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h2 class="about-subtitle">I am Kiervey</h2>
-                </div>
-                <div class="col-md-8 col-sm-12">
-                    <p class="about-text">
-                        Full-stack Web Developer with 1 year of experience in building a web application from Back-end to Front-end using PHP
-                        Laravel and Vue.js with API Integration.
-                    </p>    
-                    <p class="about-text">
-                        I am passionate about coding and learning something new is my hobby. Not afraid to
-                        do the research needed to solve the problems encountered and to increase my knowledge and abilities. Can work
-                        well both independently and in a team.
-                    </p>
-                    <p class="about-text">
-                        
-                    </p>    
-                </div>
-            </div>       
-        </div>      
-    </div>
-    <div class="skills parallax mt-5" id="skills">
-        <h2 class="section-title">SKILLS</h2>
-        <div class="container">
-            <h2 class="lead skills-subtitle mt-5 ml-2">My technology stack: </h2>
-            <div class="image-set">
-                <div class="image-item">
-                    <img src="./images/skills/html.png" alt="HTML">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/css.png" alt="CSS">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/js.png" alt="Javascript">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/bootstrap.png" alt="Bootstrap">  
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/sql.png" alt="SQL">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/vb.png" alt="VB.Net">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/php.png" alt="PHP">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/laravel.png" alt="Laravel">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/vuejs.png" alt="Vue.js">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/git.png" alt="GIT">
-                </div>
-            </div>
-            <h2 class="lead skills-subtitle mt-2 ml-2">I also do know a bit of Photoshop and C# .Net </h2>
-            <div class="image-set">
-                <div class="image-item">
-                    <img src="./images/skills/ps.png" alt="Photoshop">
-                </div>
-                <div class="image-item">
-                    <img src="./images/skills/csharp.png" alt="C#">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="projects" id="projects">
-        <h2 class="section-title">PROJECTS</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="project-item">
-                        <img src="./images/covidtracker.png" class="card-img-top" alt="...">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="mb-4"><b>Corona Virus Tracker</b></h5> 
-                                <p>Covid-19 Tracker Worldwide.</p>
-                                <span class="badge badge-primary">Javascript</span>
-                                <span class="badge badge-primary">Bootstrap</span>
-                                <span class="badge badge-primary">Chart.js</span>
-                                <div class="mt-5">
-                                    <a href="https://kiervz.github.io/coronavirus" class="btn btn-sm btn-secondary"><i class="fas fa-external-link-alt"></i> LIVE</a>
-                                    <a href="https://github.com/kiervz/coronavirus" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> SOURCE CODE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="project-item">
-                        <img src="./images/stackunderflow.png" class="card-img-top" alt="...">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="mb-4"><b>Stack Underflow</b></h5> 
-                                <p>Real Time Single Page App Forum. Inspired by Stack Overflow.</p>
-                                <span class="badge badge-primary">Laravel</span>
-                                <span class="badge badge-primary">Vue.js</span>
-                                <span class="badge badge-primary">Vuetify</span>
-                                <span class="badge badge-primary">Websocket</span>
-                                <span class="badge badge-primary">RESTful API</span>
-                                <div class="mt-5">
-                                    <a href="https://github.com/kiervz/stack-underflow" class="btn btn-sm btn-secondary disabled"><i class="fas fa-external-link-alt"></i> LIVE</a>
-                                    <a href="https://github.com/kiervz/stack-underflow" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> SOURCE CODE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="project-item">
-                        <img src="./images/library-vb.png" class="card-img-top" alt="...">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="mb-4"><b>Library Management System</b></h5> 
-                                <p>My Capstone project. Windows Application Library Management System using Barcode, QR Code Scanner & SMS Notification. </p>
-                                <span class="badge badge-primary">VB .Net</span>
-                                <span class="badge badge-primary">MS SQL</span>
-                                <div class="mt-5">
-                                    <a href="https://github.com/kiervz/library-management-system.git" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> SOURCE CODE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body id="body">
+    <div id="layout">
+        <header>
+            <nav class="nav container">
+                <a href="#" class="logo">Kiervey</a>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="project-item">
-                        <img src="./images/trello.png" class="card-img-top" alt="...">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="mb-4"><b>Trello Clone</b></h5> 
-                                <p>Single Page App Trello Clone.</p>
-                                <span class="badge badge-primary">Laravel</span>
-                                <span class="badge badge-primary">Vue.js</span>
-                                <span class="badge badge-primary">Vuetify</span>
-                                <span class="badge badge-primary">RESTful API</span>
-                                <div class="mt-5">
-                                    <a href="https://github.com/kiervz/trello-clone" class="btn btn-sm btn-secondary disabled"><i class="fas fa-external-link-alt"></i> LIVE</a>
-                                    <a href="https://github.com/kiervz/trello-clone" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> SOURCE CODE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ul class="navbar close-menu">
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Experience</a></li>
+                    <li><a href="#" class="nav-link">Work</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="project-item">
-                    <img src="./images/library.png" class="card-img-top" alt="...">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="mb-4"><b>e-Library Management System</b></h5> 
-                            <p>Single Page App e-Library Management System. Converting my Capstone project into a Web Application.</p>
-                            <span class="badge badge-primary">Laravel</span>
-                            <span class="badge badge-primary">Vue.js</span>
-                            <span class="badge badge-primary">Bootstrap</span>
-                            <span class="badge badge-primary">RESTful API</span>
-                            <div class="mt-5">
-                                <a href="https://github.com/kiervz/laravel-vue-js-library" class="btn btn-sm btn-secondary disabled"><i class="fas fa-external-link-alt"></i> LIVE</a>
-                                <a href="https://github.com/kiervz/laravel-vue-js-library" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> SOURCE CODE</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </div>
+            </nav>
+        </header>
+        <div id="content" style="margin-top: 20%;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio sequi ipsam obcaecati deleniti ducimus inventore veritatis enim, nisi, nesciunt dolores officiis accusantium, blanditiis numquam molestias molestiae repudiandae qui a.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod tempore recusandae amet necessitatibus! Cum sed praesentium itaque nam aperiam eos expedita at laboriosam explicabo. Eligendi ipsam consectetur dolore quod impedit?
+            Autem, pariatur dolore quia, tempore incidunt maiores quibusdam quidem praesentium reiciendis placeat molestiae, qui omnis est deserunt doloremque. A soluta quisquam porro ullam quam expedita vero impedit voluptatem facilis officia.
+            Amet beatae animi enim illo, a natus aperiam nobis accusantium voluptatum blanditiis numquam nam magni, optio, soluta officia quos. Quae voluptatibus, soluta ullam repellendus rem ut magni a nesciunt enim?
+            Consequuntur maxime vero soluta nulla illum eos obcaecati! Necessitatibus sapiente vero corporis, dolores laboriosam delectus commodi, ipsum velit voluptas doloremque beatae possimus dicta nulla odio ea nostrum voluptatum ratione suscipit!
+            Maiores esse alias praesentium excepturi eos veritatis doloribus aliquid. Sequi odio in modi odit! Quam dolores voluptate fugit, totam, quidem autem blanditiis sunt distinctio consequatur cupiditate vel ipsum deleniti aperiam.
+            Minus consequuntur nobis expedita odit aspernatur itaque ipsa, sit quae placeat illum aliquid sint nemo repellat, libero laborum maxime ratione dignissimos, doloribus cupiditate reprehenderit molestiae veritatis? Consequatur nemo optio illo.
+            Saepe praesentium distinctio beatae perferendis velit neque, modi id voluptatum amet cumque maxime, optio aut perspiciatis accusamus exercitationem. Sint id repellendus quo eum dolorem veniam sunt provident. Amet, atque aliquid?
+            Quibusdam explicabo placeat blanditiis commodi minima consectetur eveniet, distinctio facere dignissimos deserunt officiis illum sapiente qui animi a labore necessitatibus fugiat tenetur et sit facilis! Accusantium atque esse nostrum sed!
+            Temporibus autem ut consequatur, adipisci explicabo deleniti possimus ea magni qui cum facilis nostrum et nam dignissimos officiis illo quisquam officia iure pariatur natus necessitatibus unde rerum at vel. Numquam!
+            Dolorum rem, explicabo quis quibusdam nulla eligendi omnis modi magnam ipsa aperiam recusandae architecto pariatur perferendis nam nesciunt non? Placeat reprehenderit eum ea vero quas blanditiis aut quia voluptatibus nisi.
+            Dolorum consectetur adipisci vitae incidunt maxime sint quia doloribus? Nobis natus accusamus numquam aspernatur nam, similique fugiat. Facere cum cumque laborum maiores dolor illum, vitae hic nihil vero quisquam vel?
+            Provident saepe laboriosam corrupti aut delectus libero in nisi exercitationem quo aperiam quidem, hic et aliquid recusandae. Accusamus obcaecati eum, exercitationem voluptas ea cumque magni recusandae velit, quod modi quaerat.
+            Earum ex eveniet assumenda ea cupiditate sequi ut numquam, mollitia rem blanditiis nulla asperiores impedit perferendis voluptate debitis explicabo nostrum, consequatur natus optio dicta. Corporis laudantium facere quas possimus. Temporibus!
+            Repellat mollitia placeat incidunt ut delectus voluptate non fuga eligendi? Dignissimos, eveniet nihil et esse consectetur placeat dolorum consequuntur sint sed natus enim, quidem ratione voluptatibus totam dolore earum a.
+            Corrupti tenetur voluptate dolore corporis cumque harum maxime ex unde culpa quidem saepe vero quaerat eligendi commodi nam ratione ipsa, aliquam nostrum velit excepturi praesentium voluptates laborum omnis. Cupiditate, debitis?
+            Minus blanditiis necessitatibus, non repudiandae nemo quod expedita quisquam id suscipit maxime eveniet ipsam, delectus error fugit beatae ea porro, natus ipsum qui. Doloremque quaerat, iusto voluptatem tenetur sint magnam.
+            Eum accusantium adipisci nulla! Exercitationem, voluptas rerum quod voluptate impedit harum itaque doloribus corporis. Nostrum, culpa! Voluptatem quis quisquam necessitatibus excepturi, magnam deleniti assumenda in sunt sit tenetur. Laboriosam, alias?
+            Quis ipsa impedit autem harum ad sunt inventore doloribus maiores recusandae aspernatur minima architecto excepturi id, consequuntur, quae dicta, accusantium assumenda deleniti? Velit repellat excepturi incidunt voluptate laudantium, dolores voluptatum.
+            Fuga mollitia reprehenderit nobis commodi neque, veniam unde molestias ipsam itaque quos placeat explicabo, harum autem dolore est possimus id. Nostrum omnis ipsa modi necessitatibus libero? Illo ex id accusantium.
+            Eligendi sed nam placeat quod iure laudantium quia repellendus natus impedit consectetur dolores cum reprehenderit assumenda quam, veritatis, dolorem ut ea voluptate facilis sint. Voluptates illo illum doloribus dignissimos ratione.</p>
         </div>
     </div>
-    <div class="footer mt-5">
-        <div class="container">
-            <p class="footer-title">kiervz.dev</p>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/kiervs.thegreat" class="footer-icon"><i class="fab fa-facebook"></i></a>
-                <a href="https://github.com/kiervz" class="footer-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kiervey-maghanoy" class="footer-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p>&#169; 2021 copyright all right reserved</p>
-        </div>
-    </div>
-        
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/19bfa0f513.js" crossorigin="anonymous"></script>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
