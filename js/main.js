@@ -3,6 +3,9 @@ let navbar = document.querySelector('.navbar')
 let content = document.querySelector('#content')
 let body = document.querySelector('#body')
 let nav = document.querySelector('.main-header')
+let leftOrientation = document.querySelector('.left-orientation')
+let rightOrientation = document.querySelector('.right-orientation')
+
 let prevScrollpos = window.scrollY;
 
 window.addEventListener('resize', function() {
@@ -11,6 +14,14 @@ window.addEventListener('resize', function() {
         content.classList.remove('active-blur')
         body.style.overflow = 'visible'
         menu.classList.toggle('move')
+    }
+
+    if (window.innerWidth <= 768) {
+        leftOrientation.style.display = 'none'
+        rightOrientation.style.display = 'none'
+    } else {
+        leftOrientation.style.display = 'inline'
+        rightOrientation.style.display = 'inline'
     }
 });
 

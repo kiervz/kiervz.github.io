@@ -113,6 +113,117 @@ li {
     }
 }
 
+div.left-orientation {
+    display: inline;
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--secondary-color);
+
+    ul.social-vertical {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0px auto;
+            background-color: var(--secondary-color);
+        }
+
+        li {
+            padding: 0.625em 0;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                text-decoration-skip-ink: auto;
+                color: inherit;
+                position: relative;
+                transition: var(--transition);
+            }
+
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+
+            &:hover {
+                a {
+                    .svg-icon {
+                        width: 25px;
+                        height: 25px;
+                        stroke: var(--green-color);
+    
+                        path {
+                            fill: var(--green-color);
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+div.right-orientation {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--secondary-color);
+
+    .email-link {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+
+        a {
+            margin: 20px auto;
+            padding: 10px;
+            color: var(--secondary-color);
+            letter-spacing: 0.1em;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            font-size: 0.8rem;
+         
+            &:hover {
+                color: var(--green-color);
+            }
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0px auto;
+            background-color: var(--secondary-color);
+        }
+    }
+}
+
+.svg-icon {
+    width: 25px;
+    height: 25px;
+    stroke: var(--secondary-color);
+
+    path {
+        fill: var(--secondary-color);
+    }
+}
+
 @media (max-width:768px) {
     .menu-icon {
         display: flex;

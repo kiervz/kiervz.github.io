@@ -112,6 +112,101 @@ li {
   transform: rotate(45deg) translate(-5px, -5px);
 }
 
+div.left-orientation {
+  display: inline;
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: var(--secondary-color);
+}
+div.left-orientation ul.social-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+div.left-orientation ul.social-vertical::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--secondary-color);
+}
+div.left-orientation ul.social-vertical li {
+  padding: 0.625em 0;
+}
+div.left-orientation ul.social-vertical li a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+div.left-orientation ul.social-vertical li:last-of-type {
+  margin-bottom: 20px;
+}
+div.left-orientation ul.social-vertical li:hover a .svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: var(--green-color);
+}
+div.left-orientation ul.social-vertical li:hover a .svg-icon path {
+  fill: var(--green-color);
+}
+
+div.right-orientation {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: var(--secondary-color);
+}
+div.right-orientation .email-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+div.right-orientation .email-link a {
+  margin: 20px auto;
+  padding: 10px;
+  color: var(--secondary-color);
+  letter-spacing: 0.1em;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-size: 0.8rem;
+}
+div.right-orientation .email-link a:hover {
+  color: var(--green-color);
+}
+div.right-orientation .email-link::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--secondary-color);
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: var(--secondary-color);
+}
+.svg-icon path {
+  fill: var(--secondary-color);
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: flex;
