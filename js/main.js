@@ -21,7 +21,9 @@ const checkWidth = () => {
 window.onload = () => {
     checkWidth()
 
-    preloader.style.display = 'none'
+    setTimeout(() => {
+        preloader.style.display = 'none'
+    }, 2000)
 }
 
 window.addEventListener('resize', () => {
