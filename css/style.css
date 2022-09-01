@@ -22,6 +22,14 @@ body {
   background-color: var(--bg-color);
 }
 
+#preloader {
+  background: var(--bg-color) url(../images/KM.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+}
+
 .active-blur {
   filter: blur(20px);
   pointer-events: none;
@@ -232,6 +240,7 @@ div.right-orientation .email-link::after {
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-animation: introLoad 0.5s forwards;
             animation: introLoad 0.5s forwards;
+    padding: 8em 0;
   }
   .close-menu {
     display: none;
