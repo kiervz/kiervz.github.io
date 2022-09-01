@@ -2,6 +2,8 @@ let menu = document.querySelector('.menu-icon')
 let navbar = document.querySelector('.navbar')
 let content = document.querySelector('#content')
 let body = document.querySelector('#body')
+let nav = document.querySelector('.main-header')
+let prevScrollpos = window.scrollY;
 
 window.addEventListener('resize', function() {
     if (window.innerWidth > 768 && navbar.classList.contains('open-menu')) {
@@ -25,4 +27,16 @@ menu.onclick = () => {
         body.style.overflow = 'visible'
     }
     menu.classList.toggle('move')
+}
+
+window.onscroll = () => {
+    let currentScrollPos = window.scrollY;
+
+    if (prevScrollpos > currentScrollPos) {
+        nav.style.top = "0";
+    } else {
+        nav.style.top = "-50px";
+    }
+
+    prevScrollpos = currentScrollPos;
 }
