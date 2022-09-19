@@ -1,11 +1,13 @@
 let menu = document.querySelector('.menu-icon')
 let navbar = document.querySelector('.navbar')
+let navLink = document.querySelector(".nav-link")
 let content = document.querySelector('#content')
 let body = document.querySelector('#body')
 let nav = document.querySelector('.main-header')
 let leftOrientation = document.querySelector('.left-orientation')
 let rightOrientation = document.querySelector('.right-orientation')
 let preloader = document.querySelector('#preloader')
+
 let prevScrollpos = window.scrollY;
 
 const checkWidth = () => {
@@ -25,6 +27,14 @@ window.onload = () => {
         preloader.style.display = 'none'
     }, 2000)
 }
+
+navLink.addEventListener('click', function() {
+    navbar.classList.add('close-menu')
+    navbar.classList.remove('open-menu')
+    content.classList.remove('active-blur')
+    menu.classList.remove('move')
+    body.style.overflow = 'visible'
+});
 
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768 && navbar.classList.contains('open-menu')) {
