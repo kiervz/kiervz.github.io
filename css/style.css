@@ -147,13 +147,24 @@ li {
        column-gap: 1.5em;
 }
 .navbar .nav-link {
+  position: relative;
   font-size: 0.94rem;
   padding: 4px 8px;
-  border-radius: 0.2rem;
   color: var(--primary-color);
 }
-.navbar .nav-link:hover {
-  color: var(--green-color);
+.navbar .nav-link::after {
+  margin-left: 8px;
+  background-color: var(--green-color);
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  top: 30px;
+  left: 0;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover::after {
+  width: 50%;
 }
 
 .menu-icon {
