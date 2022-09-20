@@ -1,4 +1,5 @@
 let menu = document.querySelector('.menu-icon')
+let mainHeader = document.querySelector('.main-header')
 let navbar = document.querySelector('.navbar')
 let navLink = document.querySelector(".nav-link")
 let content = document.querySelector('#content')
@@ -72,4 +73,6 @@ window.onscroll = () => {
     }
 
     prevScrollpos = currentScrollPos;
+
+    if(currentScrollPos >= 100) mainHeader.classList.add('shadow-header'); else mainHeader.classList.remove('shadow-header')
 }

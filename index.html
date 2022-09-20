@@ -13,7 +13,7 @@
 <body id="body">
     <!-- <div id="preloader"></div> -->
     <div id="layout">
-        <header class="main-header">
+        <header class="main-header shadow">
             <nav class="nav container">
                 <a href="index.html" sdata-text="Awesome" class="button-logo logo">
                     <span class="actual-text">&nbsp;Kiervey&nbsp;</span>
@@ -148,12 +148,9 @@
             delay: 1500,
             interval: 200
          });
-        ScrollReveal().reveal('.about', { delay: 600 });
-        ScrollReveal().reveal('.about-content', { delay: 1000 });
-        ScrollReveal().reveal('.about-image', { delay: 1200 });
-        ScrollReveal().reveal('.work', { delay: 600 });
-        ScrollReveal().reveal('.work-description', { delay: 1000 });
-        ScrollReveal().reveal('.work-image', { delay: 1200 });
+        ScrollReveal().reveal('.about, .work', { delay: 600 });
+        ScrollReveal().reveal('.about-content, .work-description', { delay: 900 });
+        ScrollReveal().reveal('.about-image, .work-image', { delay: 1100 });
     </script>
 </body>
 </html>
