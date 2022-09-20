@@ -22,8 +22,8 @@
 
                 <ul class="navbar close-menu">
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#work" class="nav-link">Work</a></li>
                     <li><a href="#" class="nav-link">Experience</a></li>
-                    <li><a href="#" class="nav-link">Work</a></li>
                     <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
 
@@ -79,16 +79,64 @@
             <div id="about" class="about">
                 <h2 class="content-title">About</h2>
                 <div class="about-container">
-                    <div>
-                        <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
-                        <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                    <div class="about-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                     </div>
 
                     <img class="about-image" src="../kiervz.github.io/images/shoe.jpg" alt="image">
                 </div>
             </div>
+            <div id="work" class="work">
+                <h2 class="content-title">Work</h2>
+                <div class="work-container left">
+                    <img class="work-image" src="../kiervz.github.io/images/shoe.jpg" alt="image">
+                    <div class="work-description right">
+                        <h5 class="featured-text">Featured Project</h5>
+                        <h2 class="description-title">Shoe Web</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                        <ul class="language-use right">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>React JS</li>
+                        </ul>
+                        <p class="project-link">
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="work-container right">
+                    <div class="work-description left">
+                        <h5 class="featured-text">Featured Project</h5>
+                        <h2 class="description-title">Shoe Web</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                        <ul class="language-use left">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>React JS</li>
+                        </ul>
+                        <p class="project-link">
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <img class="work-image" src="../kiervz.github.io/images/shoe.jpg" alt="image">
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/47f0e28315.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/main.js"></script>
     <script>
@@ -101,6 +149,11 @@
             interval: 200
          });
         ScrollReveal().reveal('.about', { delay: 600 });
+        ScrollReveal().reveal('.about-content', { delay: 1000 });
+        ScrollReveal().reveal('.about-image', { delay: 1200 });
+        ScrollReveal().reveal('.work', { delay: 600 });
+        ScrollReveal().reveal('.work-description', { delay: 1000 });
+        ScrollReveal().reveal('.work-image', { delay: 1200 });
     </script>
 </body>
 </html>

@@ -75,6 +75,7 @@ body {
 
 .content-title {
     position: relative;
+    margin-bottom: 40px;
 
     &::after {
         position: absolute;
@@ -85,6 +86,16 @@ body {
         left: 0;
         background-color: #64FFDA;
     }
+}
+
+.description-title {
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.description-title:hover {
+    color: var(--green-color);
 }
 
 #preloader {
@@ -103,6 +114,11 @@ body {
 
 a {
     text-decoration: none;
+    
+    li {
+        list-style:none;
+        background-color: white;
+    }
 }
 
 li {
@@ -195,8 +211,21 @@ li {
         &:hover::after {
             width: 50%;
         }
+        
+        &.active-link::after {
+            margin-left: 8px;
+            background-color: var(--green-color);
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 3px;
+            top: 30px;
+            left: 0;
+            transition: 0.3s;
+        }
     }
 }
+
 
 .menu-icon {
     display: none;
@@ -368,7 +397,7 @@ div.right-orientation {
 }
 
 .about {
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0px auto;
     padding: 100px 0px;
     max-width: 1000px;
@@ -381,15 +410,99 @@ div.right-orientation {
 }
 
 .about-content {
-    margin-top: 40px;
     color: var(--secondary-color);
 }
 
 .about-image {
     padding: 0px 20px;
-    margin-top: 40px;
     width: 50%;
     height: auto;
+}
+
+.work {
+    min-height: 100vh;
+    margin: 0px auto;
+    padding: 50px 0px;
+    max-width: 1000px;
+    width: 80vw;
+}
+
+.work-container {
+    display: grid;
+    width: 100%;
+    padding: 30px 0px;
+
+    &.left {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    &.right {
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+.work-description {
+    color: var(--secondary-color);
+    padding: 40px 10px; 
+    padding-bottom: 40px;
+    line-height: 30px;
+
+    &.right {
+        text-align: right;
+    }
+
+    &.left {
+        text-align: left;
+    }
+}
+
+.work-image {
+    padding: 10px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.featured-text {
+    color: var(--green-color);
+}
+
+.project-link {
+    font-size: 20px;
+    
+    a {
+        color: var(--secondary-color);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    a:hover {
+        color: var(--primary-color);
+    }
+}
+
+.language-use {
+    margin: 20px 0px;
+    display: flex;
+
+    &.right {
+        justify-content: end;
+        
+        li {
+            padding-left: 20px;
+        }
+    }
+
+    &.left {
+        justify-content: start;
+        
+        li {
+            padding-right: 20px;
+        }
+    }
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 80vmax var(--bg-secondary-color);
+    clip-path: inset(0 -80vmax);
 }
 
 @media (max-width:768px) {
