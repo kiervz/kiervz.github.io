@@ -431,6 +431,30 @@ div.right-orientation .email-link::after {
   grid-template-columns: 1fr 1.5fr;
 }
 
+.work-description {
+  color: var(--secondary-color);
+  padding: 40px 10px;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+.work-description.right {
+  text-align: right;
+}
+.work-description.left {
+  text-align: left;
+}
+
+.work-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: opacity(0.4) drop-shadow(0 0 0 green) saturate(1.5);
+}
+
+.work-image:hover {
+  filter: initial;
+}
+
 .other-work-container {
   width: 100%;
   padding: 50px 0px;
@@ -443,7 +467,7 @@ div.right-orientation .email-link::after {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-flow: dense;
   grid-column-gap: 20px;
-  grid-row-gap: 30px;
+  grid-row-gap: 40px;
 }
 
 .box-card {
@@ -513,28 +537,9 @@ div.right-orientation .email-link::after {
   color: var(--green-color);
 }
 
-.work-description {
-  color: var(--secondary-color);
-  padding: 40px 10px;
-  padding-bottom: 40px;
-  line-height: 30px;
-}
-.work-description.right {
-  text-align: right;
-}
-.work-description.left {
-  text-align: left;
-}
-
-.work-image {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  filter: opacity(0.4) drop-shadow(0 0 0 green) saturate(1.5);
-}
-
-.work-image:hover {
-  filter: initial;
+.show-more {
+  text-align: center;
+  padding-top: 100px;
 }
 
 .featured-text {
