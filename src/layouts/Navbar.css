@@ -1,0 +1,131 @@
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+    height: 4.375em;
+    transform: translateY(0px);
+    background-color: var(--bg-color);
+}
+
+.main-header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container {
+    margin: auto;
+    width: min(90%, 4000px);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+}
+
+.navbar .nav-link {
+    position: relative;
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    color: var(--primary-color);
+}
+
+.navbar .nav-link::after {
+    margin-left: 8px;
+    background-color: var(--violet-color);
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    top: 30px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 50%;
+}
+
+.navbar .nav-link.active-link::after {
+    margin-left: 8px;
+    background-color: var(--violet-color);
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 3px;
+    top: 30px;
+    left: 0;
+    transition: 0.3s;
+}
+  
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.menu-icon div {
+    display: block;
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+  
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media (max-width:768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        top: 0;
+        right: -100%;
+        width: min(75vw, 400px);
+        height: 100vh;
+        background-color: var(--bg-secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        padding: 50px 20px;
+        
+    }
+    
+    .navbar  .nav-link {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .open-menu {
+        right: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: introLoad 0.5s forwards;
+        padding: 8em 0;
+    }
+}
