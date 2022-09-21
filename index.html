@@ -21,10 +21,10 @@
                 </a>
 
                 <ul class="navbar close-menu">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#work" class="nav-link">Work</a></li>
-                    <li><a href="#" class="nav-link">Experience</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#about" id="nav-about" class="nav-link">About</a></li>
+                    <li><a href="#work" id="nav-work" class="nav-link">Work</a></li>
+                    <li><a href="#skill" id="nav-skill" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" id="nav-contact" class="nav-link">Contact</a></li>
                 </ul>
 
                 <div class="menu-icon">
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div id="content">
-            <div class="main">
+            <section class="main">
                 <div class="hero">
                     <p class="text-success hero-reveal">Hello! my name is</p>
                     <h1 class="text-primary hero-reveal">Kiervey Maghanoy.</h1>
@@ -75,8 +75,8 @@
                     <br><br>
                     <a href="#" class="btn-outline-primary hero-reveal">Checkout my channel!</a>
                 </div>
-            </div>
-            <div id="about" class="about">
+            </section>
+            <section id="about" class="about">
                 <h2 class="content-title">About</h2>
                 <div class="about-container">
                     <div class="about-content">
@@ -86,8 +86,8 @@
 
                     <img class="about-image" src="../kiervz.github.io/images/shoe.jpg" alt="image">
                 </div>
-            </div>
-            <div id="work" class="work">
+            </section>
+            <section id="work" class="work">
                 <h2 class="content-title">Work</h2>
                 <div class="work-container left">
                     <img class="work-image" src="../kiervz.github.io/images/shoe.jpg" alt="image">
@@ -268,7 +268,7 @@
                         <button class="btn-outline-primary">Show More</button>
                     </div> -->
                 </div> 
-            </div>
+            </section>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/47f0e28315.js" crossorigin="anonymous"></script>
@@ -282,10 +282,13 @@
         ScrollReveal().reveal('.orientation', { 
             delay: 1500,
             interval: 200
-         });
-        ScrollReveal().reveal('.about, .work', { delay: 600 });
+        });
         ScrollReveal().reveal('.about-content, .work-description', { delay: 900 });
         ScrollReveal().reveal('.about-image, .work-image', { delay: 1100 });
+        ScrollReveal().reveal('.box-card', { 
+            delay: 600,
+            interval: 200
+        });
     </script>
 </body>
 </html>
