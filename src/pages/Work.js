@@ -1,7 +1,59 @@
-import React from 'react'
-import { FaGithub, FaExternalLinkAlt, FaRegFolder } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import workImage from '../assets/images/shoe.jpg'
 import './Work.css'
+import WorkItem from './WorkItem'
+
+const DUMMY_DATA = [
+    {
+        id: 1,
+        githubLink: 'https://github.com/kiervz/kiervz.github.io',
+        external: {
+            available: true,
+            link: 'https://kiervz.github.io'
+        },
+        title: 'Fake E-commerce',
+        content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.',
+        technologies: [
+            {id: 1, name: 'HTML'},
+            {id: 2, name: 'CSS'},
+            {id: 3, name: 'Javascript'},
+            {id: 4, name: 'React JS'}
+        ]
+    },
+    {
+        id: 2,
+        githubLink: 'https://github.com/kiervz/kiervz.github.io',
+        external: {
+            available: false,
+            link: null
+        },
+        title: 'Fake E-commerce',
+        content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis? blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis? blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?',
+        technologies: [
+            {id: 1, name: 'HTML'},
+            {id: 2, name: 'CSS'},
+            {id: 3, name: 'Javascript'},
+            {id: 4, name: 'React JS'}
+        ]
+    },
+    {
+        id: 3,
+        githubLink: 'https://github.com/kiervz/kiervz.github.io',
+        external: {
+            available: false,
+            link: null
+        },
+        title: 'Fake E-commerce',
+        content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.',
+        technologies: [
+            {id: 1, name: 'HTML'},
+            {id: 2, name: 'CSS'},
+            {id: 3, name: 'Javascript'},
+            {id: 4, name: 'React JS'}
+        ]
+    },
+]
 
 const Work = () => {
     return (
@@ -56,131 +108,9 @@ const Work = () => {
                     <h5 className="text-center text-success">List of App and System that I created.</h5>
                     
                     <div className="box-container">
-                        <div className="box-card">
-                            <div className="box-header">
-                                <div className="box-top">
-                                    <FaRegFolder className='box-folder-icon' />
-                                    <div className="box-links">
-                                        <a href="#a">
-                                            <FaGithub />
-                                        </a>
-                                        <a href="#a">
-                                            <FaExternalLinkAlt />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="box-title">
-                                    <p>Ecommerce Website</p>
-                                </div>
-                                <div className="box-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box-footer">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>React JS</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="box-card">
-                            <div className="box-header">
-                                <div className="box-top">
-                                    <FaRegFolder className='box-folder-icon'/>
-                                    <div className="box-links">
-                                        <a href="#a">
-                                            <FaGithub />
-                                        </a>
-                                        <a href="#a">
-                                            <FaExternalLinkAlt />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="box-title">
-                                    <p>Ecommerce Website</p>
-                                </div>
-                                <div className="box-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box-footer">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>React JS</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="box-card">
-                            <div className="box-header">
-                                <div className="box-top">
-                                    <FaRegFolder className='box-folder-icon'/>
-                                    <div className="box-links">
-                                        <a href="#a">
-                                            <FaGithub />
-                                        </a>
-                                        <a href="#a">
-                                            <FaExternalLinkAlt />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="box-title">
-                                    <p>Ecommerce Website</p>
-                                </div>
-                                <div className="box-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ut accusantium. Natus sit voluptatem minus blanditiis repellendus ducimus mollitia voluptatum sunt iste? Temporibus placeat, eaque unde dolores dignissimos ducimus nihil?
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box-footer">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>React JS</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div className="box-card">
-                            <div className="box-header">
-                                <div className="box-top">
-                                    <FaRegFolder className='box-folder-icon'/>
-                                    <div className="box-links">
-                                        <a href="#a">
-                                            <FaGithub />
-                                        </a>
-                                        <a href="#a">
-                                            <FaExternalLinkAlt />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="box-title">
-                                    <p>Ecommerce Website</p>
-                                </div>
-                                <div className="box-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Minima magnam fugit sed consectetur nihil, alias et explicabo autem tempore nisi libero.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box-footer">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>React JS</li>
-                                </ul>
-                            </div>
-                        </div>        
+                        {DUMMY_DATA.map(work => (
+                            <WorkItem work={work} key={work.id} />
+                        ))}
                     </div>
                 </div> 
             </section>
