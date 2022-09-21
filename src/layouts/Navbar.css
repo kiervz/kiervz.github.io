@@ -132,3 +132,21 @@
         padding: 8em 0;
     }
 }
+
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .main-header {
+        height: 4.375em;
+        transform: translateY(0px);
+        background-color: #0a192fd9;
+    }
+}

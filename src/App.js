@@ -3,6 +3,7 @@ import MainContent from "./layouts/MainContent";
 import Navbar from "./layouts/Navbar";
 import About from "./pages/About";
 import Main from "./pages/Main";
+import Work from "./pages/Work";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <MainContent>
                 <Main />
                 <About />
+                <Work />
             </MainContent>
         </div>
     );

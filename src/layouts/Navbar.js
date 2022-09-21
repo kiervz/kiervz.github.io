@@ -27,6 +27,7 @@ const Navbar = () => {
 
     useEffect(() => {
         checkWidth()
+        // eslint-disable-next-line
     }, [width])
 
     return (
