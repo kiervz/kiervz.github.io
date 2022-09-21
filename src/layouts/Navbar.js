@@ -25,6 +25,29 @@ const Navbar = () => {
         }
     }
 
+    const clickNavBar = (e) => {
+        document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active-link'))
+        document.querySelector(`#${e.target.id}`).classList.add('active-link')
+    }
+
+    const scrollActive = () => {
+        const scrollY = window.pageYOffset
+
+        document.querySelectorAll('section[id]').forEach(current =>{
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50;
+            let sectionId = current.getAttribute('id')
+            
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                document.querySelector('#nav-' + sectionId).classList.add('active-link')
+            }else{
+                document.querySelector('#nav-' + sectionId).classList.remove('active-link')
+            }
+        })
+    }
+
+    window.addEventListener('scroll', scrollActive)
+
     useEffect(() => {
         checkWidth()
         // eslint-disable-next-line
@@ -36,10 +59,42 @@ const Navbar = () => {
                 <a href="/" className="logo">Kiervey</a>
 
                 <ul className={`navbar ${isOpenMenu ? 'open-menu' : 'close-menu'}`}>
-                    <li><a href="#about" className='nav-link'>About</a></li>
-                    <li><a href="#work" className='nav-link'>Work</a></li>
-                    <li><a href="#skill" className='nav-link'>Skills</a></li>
-                    <li><a href="#contact" className='nav-link'>Contact</a></li>
+                    <li>
+                        <a 
+                            href="#about" 
+                            id='nav-about'
+                            className='nav-link'
+                            onClick={clickNavBar}>
+                                About
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#work" 
+                            id='nav-work'
+                            className='nav-link'
+                            onClick={clickNavBar}>
+                                Work
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#skill" 
+                            id='nav-skill'
+                            className='nav-link'
+                            onClick={clickNavBar}>
+                                Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#contact" 
+                            id='nav-contact'
+                            className='nav-link'
+                            onClick={clickNavBar}>
+                                Contact
+                        </a>
+                    </li>
                 </ul>
 
                 <div className={`menu-icon ${isOpenMenu ? 'move' : ''}`} onClick={clickMenu}>
