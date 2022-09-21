@@ -293,6 +293,7 @@ div.left-orientation ul.social-vertical li {
   padding: 0.625em 0;
 }
 div.left-orientation ul.social-vertical li a {
+  font-size: 24px;
   display: inline-block;
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
@@ -300,6 +301,9 @@ div.left-orientation ul.social-vertical li a {
   color: inherit;
   position: relative;
   transition: var(--transition);
+}
+div.left-orientation ul.social-vertical li:hover {
+  color: var(--green-color);
 }
 div.left-orientation ul.social-vertical li:last-of-type {
   margin-bottom: 20px;
@@ -335,7 +339,7 @@ div.right-orientation .email-link a {
   letter-spacing: 0.1em;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 div.right-orientation .email-link a:hover {
   color: var(--green-color);

@@ -299,12 +299,17 @@ div.left-orientation {
         li {
             padding: 0.625em 0;
             a {
+                font-size: 24px;
                 display: inline-block;
                 text-decoration: none;
                 text-decoration-skip-ink: auto;
                 color: inherit;
                 position: relative;
                 transition: var(--transition);
+            }
+
+            &:hover {
+                color: var(--green-color);
             }
 
             &:last-of-type {
@@ -351,7 +356,7 @@ div.right-orientation {
             letter-spacing: 0.1em;
             -webkit-writing-mode: vertical-rl;
             writing-mode: vertical-rl;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
          
             &:hover {
                 color: var(--green-color);
