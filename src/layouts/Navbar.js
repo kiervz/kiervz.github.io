@@ -14,6 +14,14 @@ const Navbar = () => {
 
     const clickMenu = () => {
         setIsOpenMenu(!isOpenMenu)
+
+        document.body.classList.add('body-overflow')
+        
+        if (!isOpenMenu) {
+            document.querySelector('#content').classList.add('active-blur')
+        } else {
+            document.querySelector('#content').classList.remove('active-blur')
+        }
     }
 
     useEffect(() => {

@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
+}
+
+.main h2 {
+    font-size: clamp(1.8rem, 3.8vw + 1rem, 4rem);
+}
+
+.main p.hero-description {
+    width: min(100%, 768px);
+}
+
+.hero {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+    width: 80vw;
+}
