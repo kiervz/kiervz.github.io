@@ -1,6 +1,7 @@
 import React from "react";
 import MainContent from "./layouts/MainContent";
 import Navbar from "./layouts/Navbar";
+import About from "./pages/About";
 import Main from "./pages/Main";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
             <Navbar />
             <MainContent>
                 <Main />
+                <About />
             </MainContent>
         </div>
     );

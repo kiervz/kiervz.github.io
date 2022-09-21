@@ -9,17 +9,18 @@ const Navbar = () => {
     const checkWidth = () => {
         if (width > 768 && isOpenMenu) {
             setIsOpenMenu(false)
+            document.querySelector('#content').classList.remove('active-blur')
         }
     }
 
     const clickMenu = () => {
         setIsOpenMenu(!isOpenMenu)
-
-        document.body.classList.add('body-overflow')
         
         if (!isOpenMenu) {
+            document.body.classList.add('body-overflow')
             document.querySelector('#content').classList.add('active-blur')
         } else {
+            document.body.classList.remove('body-overflow')
             document.querySelector('#content').classList.remove('active-blur')
         }
     }
