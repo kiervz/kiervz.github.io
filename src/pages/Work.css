@@ -192,6 +192,9 @@
     .work-description h5, h2, p {
         text-align: left;
     }
+    .work-image {
+        filter: none;
+    }
     .language-use {
         margin: 20px 0px;
         display: flex;

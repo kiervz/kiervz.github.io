@@ -26,6 +26,10 @@ const Navbar = () => {
     }
 
     const clickNavBar = (e) => {
+        setIsOpenMenu(false)
+        
+        document.body.classList.remove('body-overflow')
+        document.querySelector('#content').classList.remove('active-blur')
         document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active-link'))
         document.querySelector(`#${e.target.id}`).classList.add('active-link')
     }
@@ -56,7 +60,10 @@ const Navbar = () => {
     return (
         <header className="main-header shadow">
             <nav className="nav container">
-                <a href="/" className="logo">Kiervey</a>
+                <a href="/" className="button-logo logo">
+                    <span className="actual-text">&nbsp;Kiervey&nbsp;</span>
+                    <span className="hover-text" aria-hidden="true">&nbsp;Kiervey&nbsp;</span>
+                </a>
 
                 <ul className={`navbar ${isOpenMenu ? 'open-menu' : 'close-menu'}`}>
                     <li>
