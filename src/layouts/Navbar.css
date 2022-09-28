@@ -10,9 +10,12 @@
     z-index: 5;
     backdrop-filter: blur(5px);
     transition: var(--transition);
-    height: 4.375em;
     transform: translateY(0px);
     background-color: var(--bg-color);
+}
+
+.shadow-header {
+    box-shadow: 0 10px 30px -10px var(--navy-shadow);
 }
 
 .main-header .nav {
@@ -44,7 +47,7 @@
 
 .navbar .nav-link::after {
     margin-left: 8px;
-    background-color: var(--violet-color);
+    background-color: var(--blue-color);
     position: absolute;
     content: "";
     width: 0;
@@ -60,7 +63,7 @@
 
 .navbar .nav-link.active-link::after {
     margin-left: 8px;
-    background-color: var(--violet-color);
+    background-color: var(--blue-color);
     position: absolute;
     content: "";
     width: 50%;
@@ -111,32 +114,12 @@
 
 .logo {
     letter-spacing: 3px;
-    text-decoration: none;
     font-size: 1em;
-    font-family: "Arial";
     position: relative;
+    font-weight: 700;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--primary-color);
 }
 
-.hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--violet-color);
-    width: 0%;
-    inset: 0;
-    border-right: 6px solid var(--violet-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--violet-color);
-}
-
-.logo:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--violet-color))
-}
 
 @media (max-width:768px) {
     .menu-icon {
@@ -187,7 +170,6 @@
 
 @media (prefers-reduced-motion: no-preference){
     .main-header {
-        height: 4.375em;
         transform: translateY(0px);
         background-color: #0a192fd9;
     }

@@ -34,7 +34,7 @@ const WorkItem = ({work}) => {
             <div className="box-footer">
                 <ul>
                     {work.technologies.map(tech => (
-                        <li key={tech.id}>{tech.name}</li>
+                        <li key={tech.id}><span className='tech'>{tech.name}</span></li>
                     ))}
                 </ul>
             </div>

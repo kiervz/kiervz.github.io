@@ -58,7 +58,9 @@ const DUMMY_DATA = [
 const Work = () => {
     return (
         <section id="work" className="work">
-                <h2 className="content-title">Work</h2>
+                <h2 className="content-title">
+                    <span className='text-gradient'>Work</span>
+                </h2>
                 <div className="work-container left">
                     <img className="work-image" src={workImage} alt="aimage" />
                     <div className="work-description right">
@@ -66,10 +68,10 @@ const Work = () => {
                         <h2 className="description-title">Shoe Web</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <ul className="language-use right">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React JS</li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>React JS</span></li>
                         </ul>
                         <p className="project-link">
                             <a href="#a">
@@ -87,10 +89,10 @@ const Work = () => {
                         <h2 className="description-title">Shoe Web</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <ul className="language-use left">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React JS</li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>React JS</span></li>
                         </ul>
                         <p className="project-link">
                             <a href="#a">
@@ -104,8 +106,10 @@ const Work = () => {
                     <img className="work-image" src={workImage} alt="aimage" />
                 </div>
                 <div className="other-work-container">
-                    <h2 className="text-center">Other Works</h2>
-                    <h5 className="text-center text-success">List of App and System that I created.</h5>
+                    <h2 className="text-center">
+                        <span className='text-gradient'>Other Works</span>
+                    </h2>
+                    <h5 className="text-center text-primary">List of App and System that I created.</h5>
                     
                     <div className="box-container">
                         {DUMMY_DATA.map(work => (

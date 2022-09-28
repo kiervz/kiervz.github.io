@@ -42,10 +42,16 @@ const Navbar = () => {
             const sectionTop = current.offsetTop - 50;
             let sectionId = current.getAttribute('id')
             
-            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
                 document.querySelector('#nav-' + sectionId).classList.add('active-link')
-            }else{
+            } else{
                 document.querySelector('#nav-' + sectionId).classList.remove('active-link')
+            }
+
+            if (scrollY >= 100) {
+                document.querySelector('.main-header').classList.add('shadow-header')
+            } else {
+                document.querySelector('.main-header').classList.remove('shadow-header')
             }
         })
     }
@@ -58,11 +64,10 @@ const Navbar = () => {
     }, [width])
 
     return (
-        <header className="main-header shadow">
+        <header className="main-header">
             <nav className="nav container">
                 <a href="/" className="button-logo logo">
-                    <span className="actual-text">&nbsp;Kiervey&nbsp;</span>
-                    <span className="hover-text" aria-hidden="true">&nbsp;Kiervey&nbsp;</span>
+                    <span className="text-gradient">Kiervey</span>
                 </a>
 
                 <ul className={`navbar ${isOpenMenu ? 'open-menu' : 'close-menu'}`}>

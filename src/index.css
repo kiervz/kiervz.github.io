@@ -12,7 +12,7 @@
 }
 
 :root {
-  --violet-color: #612BFE;
+  --blue-color: #2190FF;
   --primary-color: #CCD6F6;
   --secondary-color: #8892B0;
   --bg-color: #0A192F;
@@ -36,12 +36,19 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--violet-color);
+  background-color: var(--blue-color);
 }
 
 body {
   color: var(--primary-color);
   background-color: var(--bg-color);
+}
+
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .mt-1 {
@@ -88,7 +95,7 @@ body {
   height: 1px;
   top: 40px;
   left: 0;
-  background-color: var(--violet-color);
+  background-color: var(--blue-color);
 }
 
 .text-primary {
@@ -100,7 +107,7 @@ body {
 }
 
 .text-success {
-  color: var(--violet-color);
+  color: var(--blue-color);
 }
 
 .text-dark {
@@ -113,7 +120,7 @@ body {
 
 .btn-primary {
   padding: 10px 20px;
-  background-color: var(--violet-color);
+  background-color: var(--blue-color);
   color: white;
   border: 0;
   border-radius: 5px;
@@ -121,13 +128,13 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #4D32D3;
+  background-color: #006FDD;
 }
 
 .btn-outline-primary {
   padding: 10px 20px;
-  border: 1px solid var(--violet-color);
-  color: var(--violet-color);
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
   background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
