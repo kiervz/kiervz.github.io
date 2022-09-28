@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import workImage from '../assets/images/shoe.jpg'
 import './Work.css'

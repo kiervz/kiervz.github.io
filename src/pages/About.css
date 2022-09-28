@@ -21,7 +21,7 @@
     width: 50%;
     height: auto;
     border-radius: 15px;
-    filter: opacity(0.4) drop-shadow(0 0 0 #602bfe52) saturate(1.1);
+    filter: opacity(0.4) drop-shadow(0 0 0 blue) saturate(1.5);
 }
   
 .about-image:hover {
