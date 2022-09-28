@@ -57,30 +57,36 @@ const DUMMY_DATA = [
 
 const Work = () => {
     return (
-        <section id="work" className="work">
+        <section id="project" className="work">
                 <h2 className="content-title">
-                    <span className='text-gradient'>Work</span>
+                    <span className='text-gradient'>Projects</span> <span className='text-secondary'>crafted with love.</span>
                 </h2>
                 <div className="work-container left">
                     <img className="work-image" src={workImage} alt="aimage" />
                     <div className="work-description right">
-                        <h5 className="featured-text">Featured Project</h5>
-                        <h2 className="description-title">Shoe Web</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
-                        <ul className="language-use right">
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                            <li><span>Javascript</span></li>
-                            <li><span>React JS</span></li>
-                        </ul>
-                        <p className="project-link">
-                            <a href="#a">
-                                <FaGithub />
-                            </a>
-                            <a href="#a">
-                                <FaExternalLinkAlt />
-                            </a>
-                        </p>
+                        <div>
+                            <h5 className="featured-text">Featured Project</h5>
+                            <h2 className="description-title">Shoe Web</h2>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                        </div>
+                        <div>
+                            <ul className="language-use right">
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>Javascript</span></li>
+                                <li><span>React JS</span></li>
+                            </ul>
+                            <p className="project-link">
+                                <a href="#a">
+                                    <FaGithub />
+                                </a>
+                                <a href="#a">
+                                    <FaExternalLinkAlt />
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="work-container right">
@@ -109,7 +115,7 @@ const Work = () => {
                     <h2 className="text-center">
                         <span className='text-gradient'>Other Works</span>
                     </h2>
-                    <h5 className="text-center text-primary">List of App and System that I created.</h5>
+                    <h4 className="text-center text-secondary">Some of Apps and Systems that I created.</h4>
                     
                     <div className="box-container">
                         {DUMMY_DATA.map(work => (

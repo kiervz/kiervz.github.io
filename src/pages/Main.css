@@ -10,8 +10,8 @@
     font-size: clamp(2rem, 4vw + 1rem, 4rem);
 }
 
-.main h2 {
-    font-size: clamp(1.8rem, 3.8vw + 1rem, 4rem);
+.hero > span {
+    font-size: clamp(1.8rem, 3.8vw + 1rem, 4rem)!important;
 }
 
 .main p.hero-description {

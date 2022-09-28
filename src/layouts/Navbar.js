@@ -82,11 +82,11 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a 
-                            href="#work" 
-                            id='nav-work'
+                            href="#project" 
+                            id='nav-project'
                             className='nav-link'
                             onClick={clickNavBar}>
-                                Work
+                                Projects
                         </a>
                     </li>
                     <li>

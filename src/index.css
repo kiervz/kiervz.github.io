@@ -44,13 +44,6 @@ body {
   background-color: var(--bg-color);
 }
 
-.text-gradient {
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
 .mt-1 {
   margin-top: 10px;
 }
@@ -118,6 +111,23 @@ body {
   text-align: center;
 }
 
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.btn-icon {
+  width: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-icon svg {
+  margin-left: 20px;
+}
+
 .btn-primary {
   padding: 10px 20px;
   background-color: var(--blue-color);
@@ -129,6 +139,14 @@ body {
 
 .btn-primary:hover {
   background-color: #006FDD;
+}
+
+.btn-dark {
+  padding: 10px 20px;
+  background-color: var(--bg-secondary-color);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-outline-primary {
