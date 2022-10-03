@@ -65,10 +65,10 @@ const Work = () => {
                 </h2>
             </Slide>
             <div className="work-container left">
-                <Fade triggerOnce={true} delay={600} duration={400}>
+                <Fade triggerOnce={true} delay={200} duration={400}>
                     <img className="work-image" src={workImage} alt="aimage" />
                 </Fade>
-                <Fade triggerOnce={true} direction={'right'} delay={600} duration={600}>
+                <Fade triggerOnce={true} delay={600} duration={600}>
                     <div className="work-description right">
                         <div>
                             <h5 className="featured-text">Featured Project</h5>
@@ -97,7 +97,7 @@ const Work = () => {
                 </Fade>
             </div>
             <div className="work-container right">
-                <Fade triggerOnce={true} direction={'left'} delay={600} duration={400}>
+                <Fade triggerOnce={true} delay={200} duration={400}>
                     <div className="work-description left">
                         <h5 className="featured-text">Featured Project</h5>
                         <h2 className="description-title">Shoe Web</h2>
@@ -132,8 +132,8 @@ const Work = () => {
                 
                 <div className="box-container">
                     {DUMMY_DATA.map(work => (
-                        <Fade triggerOnce={true} delay={300 + (work.id * 200)}>
-                            <WorkItem work={work} key={work.id} />
+                        <Fade triggerOnce={true} delay={300 + (work.id * 200)} key={work.id} >
+                            <WorkItem work={work}/>
                         </Fade>
                     ))}
                 </div>

@@ -2,7 +2,7 @@
 .work {
     min-height: 100vh;
     margin: 0px auto;
-    padding-top: 100px;
+    padding: 80px 0px;
     max-width: 1000px;
     width: 80vw;
 }
@@ -65,7 +65,7 @@
   
 .other-work-container {
     width: 100%;
-    padding: 60px 0px;
+    padding: 170px 0px 60px 0px;
 }
   
 .box-container {

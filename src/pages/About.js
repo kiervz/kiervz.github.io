@@ -13,15 +13,15 @@ const About = () => {
             </Slide>
             <div className="about-container">
                 <div className="about-content">
-                    <Fade triggerOnce={true} cascade delay={300}>
+                    <Fade triggerOnce={true} cascade delay={200}>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <p className='mt-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                     </Fade>
                 </div>
 
-                <Slide triggerOnce={true} direction={'right'}>
+                <Fade triggerOnce={true} delay={900}>
                     <img className="about-image" src={aboutImage} alt="about" />
-                </Slide>
+                </Fade>
             </div>
         </section>
     )
