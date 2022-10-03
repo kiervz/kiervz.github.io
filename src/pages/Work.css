@@ -10,7 +10,7 @@
 .work-container {
     display: grid;
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px 0px 100px 0px;
 }
 
 .work-container h2 {

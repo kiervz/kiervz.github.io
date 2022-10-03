@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { Fade, Slide } from "react-awesome-reveal";
 import workImage from '../assets/images/shoe.jpg'
 import './Work.css'
 import WorkItem from './WorkItem'
@@ -58,11 +59,16 @@ const DUMMY_DATA = [
 const Work = () => {
     return (
         <section id="project" className="work">
+            <Slide triggerOnce={true}>
                 <h2 className="content-title">
                     <span className='text-gradient'>Projects</span> <span className='text-secondary'>crafted with love.</span>
                 </h2>
-                <div className="work-container left">
+            </Slide>
+            <div className="work-container left">
+                <Fade triggerOnce={true} delay={600} duration={400}>
                     <img className="work-image" src={workImage} alt="aimage" />
+                </Fade>
+                <Fade triggerOnce={true} direction={'right'} delay={600} duration={600}>
                     <div className="work-description right">
                         <div>
                             <h5 className="featured-text">Featured Project</h5>
@@ -88,8 +94,10 @@ const Work = () => {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="work-container right">
+                </Fade>
+            </div>
+            <div className="work-container right">
+                <Fade triggerOnce={true} direction={'left'} delay={600} duration={400}>
                     <div className="work-description left">
                         <h5 className="featured-text">Featured Project</h5>
                         <h2 className="description-title">Shoe Web</h2>
@@ -109,21 +117,28 @@ const Work = () => {
                             </a>
                         </p>
                     </div>
+                </Fade>
+                <Fade triggerOnce={true} delay={600} duration={600}>
                     <img className="work-image" src={workImage} alt="aimage" />
-                </div>
-                <div className="other-work-container">
+                </Fade>
+            </div>
+            <div className="other-work-container">
+                <Slide triggerOnce={true}>
                     <h2 className="text-center">
                         <span className='text-gradient'>Other Works</span>
                     </h2>
                     <h4 className="text-center text-secondary">Some of Apps and Systems that I created.</h4>
-                    
-                    <div className="box-container">
-                        {DUMMY_DATA.map(work => (
+                </Slide>
+                
+                <div className="box-container">
+                    {DUMMY_DATA.map(work => (
+                        <Fade triggerOnce={true} delay={300 + (work.id * 200)}>
                             <WorkItem work={work} key={work.id} />
-                        ))}
-                    </div>
-                </div> 
-            </section>
+                        </Fade>
+                    ))}
+                </div>
+            </div> 
+        </section>
     )
 }
 
