@@ -14,23 +14,21 @@ const Main = () => {
                 <Fade triggerOnce={true} delay={500} duration={500}>
                     <h1 className="mb-1"><span className='text-gradient'>Kiervey Maghanoy.</span></h1>
                 </Fade>
-                <Fade triggerOnce={true} delay={800}>
-                    <TypeAnimation
-                        sequence={[
-                            'Passionate Web Developer.',
-                            1500,
-                            'I do back-end development.',
-                            1500,
-                            'I do front-end development.',
-                            1500,
-                        ]}
-                        speed={40}
-                        style={{ fontSize: '3.5em' }}
-                        wrapper="span"
-                        className='second-title'
-                        repeat={Infinity} 
-                    />
-                </Fade>
+                <TypeAnimation
+                    sequence={[
+                        'Passionate Web Developer.',
+                        1500,
+                        'I do back-end development.',
+                        1500,
+                        'I do front-end development.',
+                        1500,
+                    ]}
+                    speed={40}
+                    style={{ fontSize: '3.5em' }}
+                    wrapper="span"
+                    className='second-title'
+                    repeat={Infinity} 
+                />
                 <Fade triggerOnce={true} delay={1000} duration={500}>
                     <p className="text-secondary hero-description mb-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sunt inventore. Consequatur, autem hic rerum dolor doloremque nostrum nisi blanditiis a tempora sed unde magni nesciunt adipisci recusandae ea <a href="#a" className="text-success">Expedita!</a></p>
                 </Fade>
