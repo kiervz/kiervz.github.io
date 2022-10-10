@@ -2,6 +2,8 @@ import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { Fade, Slide } from "react-awesome-reveal";
 import workImage from '../assets/images/shoe.jpg'
+import kveyStoreImage from '../assets/images/kvey-store.png'
+import theMealRecipeImage from '../assets/images/the-meal-recipe.png'
 import './Work.css'
 import WorkItem from './WorkItem'
 
@@ -66,29 +68,28 @@ const Work = () => {
             </Slide>
             <div className="work-container left">
                 <Fade triggerOnce={true} delay={200} duration={400}>
-                    <img className="work-image" src={workImage} alt="aimage" />
+                    <img className="work-image" src={kveyStoreImage} alt="aimage" />
                 </Fade>
                 <Fade triggerOnce={true} delay={600} duration={600}>
                     <div className="work-description right">
-                        <div>
-                            <h5 className="featured-text">Featured Project</h5>
-                            <h2 className="description-title">Shoe Web</h2>
-                        </div>
+                        <h5 className="featured-text">Featured Project</h5>
+                        <h2 className="description-title">Kvey Store</h2>
                         <div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         </div>
                         <div>
                             <ul className="language-use right">
-                                <li><span>HTML</span></li>
-                                <li><span>CSS</span></li>
-                                <li><span>Javascript</span></li>
+                                <li><span>HTML/CSS</span></li>
+                                <li><span>Laravel</span></li>
                                 <li><span>React JS</span></li>
+                                <li><span>AWS EC2 & S3</span></li>
+                                <li><span>Stripe</span></li>
                             </ul>
                             <p className="project-link">
-                                <a href="#a">
+                                <a href="https://github.com/kiervz/kvey-store" target='__blank'>
                                     <FaGithub />
                                 </a>
-                                <a href="#a">
+                                <a href="https://kierveymaghanoy.com/kvey-store" target='__blank'>
                                     <FaExternalLinkAlt />
                                 </a>
                             </p>
@@ -100,26 +101,27 @@ const Work = () => {
                 <Fade triggerOnce={true} delay={200} duration={400}>
                     <div className="work-description left">
                         <h5 className="featured-text">Featured Project</h5>
-                        <h2 className="description-title">Shoe Web</h2>
+                        <h2 className="description-title">The Meal Recipe</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
-                        <ul className="language-use left">
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                            <li><span>Javascript</span></li>
-                            <li><span>React JS</span></li>
-                        </ul>
-                        <p className="project-link">
-                            <a href="#a">
-                                <FaGithub />
-                            </a>
-                            <a href="#a">
-                                <FaExternalLinkAlt />
-                            </a>
-                        </p>
+                        <div>
+                            <ul className="language-use left">
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>React JS</span></li>
+                            </ul>
+                            <p className="project-link">
+                                <a href="https://github.com/kiervz/themealrecipe" target='__blank'>
+                                    <FaGithub />
+                                </a>
+                                <a href="https://kierveymaghanoy.com/themealrecipe" target='__blank'>
+                                    <FaExternalLinkAlt />
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </Fade>
                 <Fade triggerOnce={true} delay={600} duration={600}>
-                    <img className="work-image" src={workImage} alt="aimage" />
+                    <img className="work-image" src={theMealRecipeImage} alt="aimage" />
                 </Fade>
             </div>
             <div className="other-work-container">
@@ -137,7 +139,10 @@ const Work = () => {
                         </Fade>
                     ))}
                 </div>
-            </div> 
+            </div>
+            <div className='featured-text text-center' style={{marginTop: '120px'}}>
+                <p>**Under Construction**</p>
+            </div>
         </section>
     )
 }

@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    height: 85%;
     color: var(--secondary-color);
     padding: 40px 10px;
     padding-bottom: 40px;
