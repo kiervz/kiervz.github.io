@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { Fade, Slide } from "react-awesome-reveal";
-import workImage from '../assets/images/shoe.jpg'
 import kveyStoreImage from '../assets/images/kvey-store.png'
 import theMealRecipeImage from '../assets/images/the-meal-recipe.png'
 import './Work.css'
@@ -72,11 +71,11 @@ const Work = () => {
                 </Fade>
                 <Fade triggerOnce={true} delay={600} duration={600}>
                     <div className="work-description right">
-                        <h5 className="featured-text">Featured Project</h5>
-                        <h2 className="description-title">Kvey Store</h2>
                         <div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                            <h5 className="featured-text">Featured Project</h5>
+                            <h2 className="description-title">Kvey Store</h2>
                         </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <div>
                             <ul className="language-use right">
                                 <li><span>HTML/CSS</span></li>
@@ -100,8 +99,10 @@ const Work = () => {
             <div className="work-container right">
                 <Fade triggerOnce={true} delay={200} duration={400}>
                     <div className="work-description left">
-                        <h5 className="featured-text">Featured Project</h5>
-                        <h2 className="description-title">The Meal Recipe</h2>
+                        <div>
+                            <h5 className="featured-text">Featured Project</h5>
+                            <h2 className="description-title">The Meal Recipe</h2>
+                        </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <div>
                             <ul className="language-use left">
@@ -129,7 +130,7 @@ const Work = () => {
                     <h2 className="text-center">
                         <span className='text-gradient'>Other Works</span>
                     </h2>
-                    <h4 className="text-center text-secondary">Some of Apps and Systems that I created.</h4>
+                    <h4 className="text-center text-secondary">Some of practice projects that I did in the past to brush up my skills.</h4>
                 </Slide>
                 
                 <div className="box-container">
@@ -141,7 +142,7 @@ const Work = () => {
                 </div>
             </div>
             <div className='featured-text text-center' style={{marginTop: '120px'}}>
-                <p>**Under Construction**</p>
+                <p className='text-center'>**Under Construction**</p>
             </div>
         </section>
     )
