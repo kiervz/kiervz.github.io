@@ -1,14 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ff5b25a.css",
-    "main.js": "/static/js/main.ce07dd2d.js",
+    "main.css": "/static/css/main.df1ea9e6.css",
+    "main.js": "/static/js/main.8b1db7ff.js",
     "static/media/the-meal-recipe.png": "/static/media/the-meal-recipe.cf337561b971a36900ce.png",
     "static/media/kvey-store.png": "/static/media/kvey-store.c4c54b540cd82d4656db.png",
     "static/media/shoe.jpg": "/static/media/shoe.39d31b05171a0e816481.jpg",
-    "index.html": "/index.html"
+    "static/media/postman.svg": "/static/media/postman.648705b5f6469f0767a4736d07313ffe.svg",
+    "static/media/react.svg": "/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
+    "static/media/laravel.svg": "/static/media/laravel.e779db84828eec1e53ca104fed31b979.svg",
+    "static/media/mysql.svg": "/static/media/mysql.2cfbd8c8308f4391029c8403d76eace4.svg",
+    "static/media/php.svg": "/static/media/php.86250ddb9d5bbfb47e9cb43fd2bc7a24.svg",
+    "static/media/html.svg": "/static/media/html.794a64840888ff6bcae542f9a401fddf.svg",
+    "static/media/css.svg": "/static/media/css.97715c1c82ff638fe06cd7d8c9b746ac.svg",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.527d0fc09fb3280153c26f0046a517a9.svg",
+    "static/media/git.svg": "/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
+    "static/media/aws.svg": "/static/media/aws.4deeed70f35a2416e664c002cae126b4.svg",
+    "static/media/typescript.svg": "/static/media/typescript.7c2e5f599fa6ccab4be8a590908ec5bb.svg",
+    "static/media/figma.svg": "/static/media/figma.d8e11e391a62a9686ea585915c747d73.svg",
+    "static/media/tools.svg": "/static/media/tools.093fec25664abf30c7c6a7a3c711baaa.svg",
+    "index.html": "/index.html",
+    "static/media/js.svg": "/static/media/js.0dd1cf6c80bb500c655a617006c1148a.svg",
+    "static/media/vue.svg": "/static/media/vue.d5e5e28576a946b29b7644ab6dc1c59e.svg",
+    "static/media/code-branch.svg": "/static/media/code-branch.48aad2fef04da0ed7fceeaf8542cde75.svg",
+    "static/media/tailwind.svg": "/static/media/tailwind.d22b29a2028c438a02033f41d11e899b.svg",
+    "static/media/code-slash.svg": "/static/media/code-slash.ab772157564d1624005f38d3a39b19f8.svg",
+    "static/media/trello.svg": "/static/media/trello.3e1bad399470c1c4d5186e3514672c3c.svg"
   },
   "entrypoints": [
-    "static/css/main.3ff5b25a.css",
-    "static/js/main.ce07dd2d.js"
+    "static/css/main.df1ea9e6.css",
+    "static/js/main.8b1db7ff.js"
   ]
 }
