@@ -141,9 +141,6 @@ const Work = () => {
                     ))}
                 </div>
             </div>
-            <div className='featured-text text-center' style={{marginTop: '120px'}}>
-                <p className='text-center'>**Under Construction**</p>
-            </div>
         </section>
     )
 }

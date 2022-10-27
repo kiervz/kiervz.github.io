@@ -16,7 +16,7 @@ const Main = () => {
                 </Fade>
                 <TypeAnimation
                     sequence={[
-                        'Passionate Web Developer.',
+                        'Passionate Web Artisan.',
                         1500,
                         'I do back-end development.',
                         1500,
