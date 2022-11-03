@@ -2,6 +2,7 @@ import React from "react";
 import MainContent from "./layouts/MainContent";
 import Navbar from "./layouts/Navbar";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Main from "./pages/Main";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
@@ -15,9 +16,7 @@ const App = () => {
                 <About />
                 <Work />
                 <Skills />
-                <div className='featured-text text-center' style={{marginBottom: '120px'}}>
-                    <p className='text-center'>**Under Construction**</p>
-                </div>
+                <Contact />
             </MainContent>
         </div>
     );
