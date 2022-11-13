@@ -35,7 +35,6 @@
     color: var(--primary-color);
     font-size: 20px;
     border: 1px solid var(--primary-color);
-    outline: none;
 }
 
 .button:hover {

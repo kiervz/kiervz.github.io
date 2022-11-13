@@ -15,7 +15,14 @@
 }
 
 .main p.hero-description {
-    width: min(100%, 668px);
+    width: min(100%, 538px);
+    line-height: 150%;
+}
+
+.text-greet {
+    color: var(--primary-color);
+    font-family: "Poppins", Arial, sans-serif;
+    letter-spacing: 3px;
 }
 
 .hero {

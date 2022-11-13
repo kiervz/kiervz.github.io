@@ -14,8 +14,10 @@ const About = () => {
             <div className="about-container">
                 <div className="about-content">
                     <Fade triggerOnce={true} cascade delay={200}>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
-                        <p className='mt-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
+                        <p>I've been a web developer for two years, and my love for the industry grows stronger as I immerse myself in different/new technologies, particularly web development.</p>
+                        <p className='mt-2'>I'm extremely motivated to constantly develop my skills and grow professionally.</p>
+                        <p className='mt-2'>All I can say is that I enjoy what I do; It is more than a job to me. It's pretty satisfying to overcome a difficult challenges that comes with programming and It allows me to express myself and my skills by developing applications that many people can benefit.</p>
+                        <p className='mt-2'>I'm just a regular guy trying to be the best version of myself, and I look forward to using my determined desire to empower myself and create a bright future.</p>
                     </Fade>
                 </div>
 

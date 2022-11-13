@@ -9,7 +9,7 @@ const Main = () => {
         <section className='main'>
             <div className="hero">
                 <Fade triggerOnce={true} delay={200} duration={500}>
-                    <h4 className="text-secondary mb-1">Hello! my name is</h4>
+                    <h4 className="text-secondary mb-1 text-greet">Hello! my name is,</h4>
                 </Fade>
                 <Fade triggerOnce={true} delay={500} duration={500}>
                     <h1 className="mb-1"><span className='text-gradient'>Kiervey Maghanoy.</span></h1>
@@ -30,13 +30,13 @@ const Main = () => {
                     repeat={Infinity} 
                 />
                 <Fade triggerOnce={true} delay={1000} duration={500}>
-                    <p className="text-secondary hero-description mb-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sunt inventore. Consequatur, autem hic rerum dolor doloremque nostrum nisi blanditiis a tempora sed unde magni nesciunt adipisci recusandae ea <a href="#a" className="text-success">Expedita!</a></p>
+                    <p className="text-secondary hero-description mt-2">I'm web developer based in Antipolo, Philippines who is enthusiastic about building a web application from front-end to back-end using PHP-Laravel and React JS.</p>
                 </Fade>
                 <Fade triggerOnce={true} delay={1300} duration={500}>
                     <div className='mt-4'>
-                    <a href="#about" className="btn-dark btn-icon">
-                        <span className='text-gradient'>More About Me</span>
-                    </a>
+                        <a href="#about" className="btn-dark btn-icon">
+                            <span className='text-gradient'>More About Me</span>
+                        </a>
                     </div>
                 </Fade>
             </div>
