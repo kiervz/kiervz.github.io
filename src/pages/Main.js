@@ -30,7 +30,7 @@ const Main = () => {
                     repeat={Infinity} 
                 />
                 <Fade triggerOnce={true} delay={1000} duration={500}>
-                    <p className="text-secondary hero-description mt-2">I'm web developer based in Antipolo, Philippines who is enthusiastic about building a web application from front-end to back-end using PHP-Laravel and React JS.</p>
+                    <p className="text-secondary hero-description mt-2">I am Web developer based in Antipolo, Philippines, and enthusiastic about using my skills and expertise to help businesses achieve their goals through the development of web solutions that are both functional and visually appealing. I am particularly skilled in using PHP-Laravel and React JS to create dynamic and responsive websites and applications.</p>
                 </Fade>
                 <Fade triggerOnce={true} delay={1300} duration={500}>
                     <div className='mt-4'>

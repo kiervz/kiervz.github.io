@@ -14,10 +14,13 @@ const About = () => {
             <div className="about-container">
                 <div className="about-content">
                     <Fade triggerOnce={true} cascade delay={200}>
-                        <p>I've been a web developer for two years, and my love for the industry grows stronger as I immerse myself in different/new technologies, particularly web development.</p>
-                        <p className='mt-2'>I'm extremely motivated to constantly develop my skills and grow professionally.</p>
-                        <p className='mt-2'>All I can say is that I enjoy what I do; It is more than a job to me. It's pretty satisfying to overcome a difficult challenges that comes with programming and It allows me to express myself and my skills by developing applications that many people can benefit.</p>
-                        <p className='mt-2'>I'm just a regular guy trying to be the best version of myself, and I look forward to using my determined desire to empower myself and create a bright future.</p>
+                        <p>As a web developer with two years of experience under my belt, I can confidently say that my love for the industry continues to grow and evolve as I immerse myself in different technologies. </p>
+                        <p className='mt-2'>As a highly motivated individual, I am always looking for ways to improve and grow both personally and professionally. I believe that a strong work ethic and a dedication to personal development are essential for achieving success in any field, and I am committed to constantly developing my skills and knowledge in order to achieve my goals.</p>
+                        <p className='mt-2'>
+                        As a web developer, I have a deep passion for what I do. I find great satisfaction in solving the complex challenges that come with programming and creating functional and user-friendly applications. It's truly a fulfilling career for me and that allows me to express my skills and creativity on a daily basis.
+                        </p>
+                        <p className='mt-2'>
+                        Overall, being a web developer is more than just a job to me. It's a career that I am truly passionate about and it allows me to make a positive difference in the world.</p>
                     </Fade>
                 </div>
 
