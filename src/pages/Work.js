@@ -78,17 +78,18 @@ const Work = () => {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque quibusdam laboriosam beatae blanditiis voluptatibus ab! Laborum illo temporibus reiciendis fugiat maiores iure est distinctio nulla, magni, quos illum perferendis?</p>
                         <div>
                             <ul className="language-use right">
-                                <li><span>HTML/CSS</span></li>
                                 <li><span>Laravel</span></li>
                                 <li><span>React JS</span></li>
-                                <li><span>AWS EC2 & S3</span></li>
+                                <li><span>TypeScript</span></li>
+                                <li><span>Tailwind CSS</span></li>
+                                <li><span>AWS EC2, RDS & S3</span></li>
                                 <li><span>Stripe</span></li>
                             </ul>
                             <p className="project-link">
                                 <a href="https://github.com/kiervz/kvey-store" target='__blank'>
                                     <FaGithub />
                                 </a>
-                                <a href="https://kierveymaghanoy.com/kvey-store" target='__blank'>
+                                <a href="https://kvey-store.vercel.app/" target='__blank'>
                                     <FaExternalLinkAlt />
                                 </a>
                             </p>
