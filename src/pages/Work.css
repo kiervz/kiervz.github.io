@@ -199,6 +199,21 @@
     justify-content: flex-start;
 }
 
+.other-projects {
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--bg-secondary-color);
+    width: max-content;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.other-projects:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 @media (max-width: 768px) {
     .work-container {
         display: flex;
