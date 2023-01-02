@@ -14,13 +14,9 @@ const About = () => {
             <div className="about-container">
                 <div className="about-content">
                     <Fade triggerOnce={true} cascade delay={200}>
-                        <p>As a web developer with two years of experience under my belt, I can confidently say that my love for the industry continues to grow and evolve as I immerse myself in different technologies. </p>
-                        <p className='mt-2'>As a highly motivated individual, I am always looking for ways to improve and grow both personally and professionally. I believe that a strong work ethic and a dedication to personal development are essential for achieving success in any field, and I am committed to constantly developing my skills and knowledge in order to achieve my goals.</p>
-                        <p className='mt-2'>
-                        As a web developer, I have a deep passion for what I do. I find great satisfaction in solving the complex challenges that come with programming and creating functional and user-friendly applications. It's truly a fulfilling career for me and that allows me to express my skills and creativity on a daily basis.
-                        </p>
-                        <p className='mt-2'>
-                        Overall, being a web developer is more than just a job to me. It's a career that I am truly passionate about and it allows me to make a positive difference in the world.</p>
+                        <p>As a web developer with two years of experience, I have a deep love for the industry and a passion for what I do. I find great satisfaction in solving complex challenges and creating functional, user-friendly applications. </p>
+                        <p className='mt-2'>As a highly motivated individual, I am always looking for ways to improve and grow both personally and professionally. And I believe that a strong work ethic and dedication to personal development are essential for success.</p>
+                        <p className='mt-2'>Overall, being a web developer is more than just a job to me. It's a career that I am truly passionate about.</p>
                     </Fade>
                 </div>
 
