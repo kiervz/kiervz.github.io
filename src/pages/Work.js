@@ -11,10 +11,10 @@ const DUMMY_DATA = [
         id: 1,
         githubLink: 'https://github.com/kiervz/musikafy',
         external: {
-            available: false,
-            link: 'https://kiervz.github.io'
+            available: true,
+            link: 'https://musikafy.vercel.app'
         },
-        title: 'Musikafy (Work in progress)',
+        title: 'Musikafy',
         content: 'A React JS clone application of the popular Spotify music streaming service. This application consumes the Shazam Core API.',
         technologies: [
             {id: 1, name: 'React JS'},

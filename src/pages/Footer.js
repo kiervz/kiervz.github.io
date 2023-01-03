@@ -4,7 +4,7 @@ import Github from '../assets/images/svg/github-profile.svg';
 import FB from '../assets/images/svg/fb.svg';
 import LinkedIn from '../assets/images/svg/linkedin-profile.svg';
 
-import './footer.css';
+import './Footer.css';
 
 const Footer = () => {
   return (
