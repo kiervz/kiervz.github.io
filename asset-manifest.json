@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9dd27a89.css",
-    "main.js": "/static/js/main.e411fce6.js",
+    "main.js": "/static/js/main.f07c83da.js",
     "static/media/the-meal-recipe.png": "/static/media/the-meal-recipe.cf337561b971a36900ce.png",
     "static/media/kvey-store.png": "/static/media/kvey-store.6a1269327404b5b46074.png",
     "static/media/shoe.jpg": "/static/media/shoe.39d31b05171a0e816481.jpg",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.9dd27a89.css",
-    "static/js/main.e411fce6.js"
+    "static/js/main.f07c83da.js"
   ]
 }
