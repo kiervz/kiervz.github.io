@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  height: 100vh;
+  width: 100vw;
+  min-width: 1300px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
